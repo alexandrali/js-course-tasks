@@ -1,0 +1,467 @@
+@font-face {
+    font-family: Gotham;
+    src: url(fonts/GothamSSm-Book.ttf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: Gotham, sans-serif;
+}
+
+body{
+	background: #d9d9d9;
+}
+
+.icon { background: url('img/icons.png'); display: inline-block; no-repeat top left; width: 8px; height: 12px;  } 
+.icon.Calendar { background-position: 0 0; width: 16px; height: 16px; } 
+.icon.clip { background-position: -17px 0; width: 21px; height: 19px; } 
+.icon.dialog { background-position: -39px 0; width: 25px; height: 21px; } 
+.icon.eye { background-position: -65px 0; width: 27px; height: 17px; } 
+.icon.heart { background-position: -93px 0; width: 25px; height: 22px; } 
+.icon.locate { background-position: -119px 0; width: 18px; height: 26px; } 
+.icon.locate-small { background-position: -138px 0; width: 12px; height: 17px; } 
+.icon.Next { background-position: -151px 0;} 
+.icon.plus { background-position: -160px 0; width: 16px; height: 16px; } 
+.icon.Prev {  background-position: -177px 0;} 
+.icon.rect { background-position: -186px 0; width: 10px; height: 7px; } 
+.icon.REMOVE { background-position: -197px 0; height: 8px; } 
+.icon.search { background-position: -206px 0; width: 22px; height: 22px; } 
+.icon.star { background-position: -229px 0; width: 21px; height: 20px; } 
+
+.shadow{
+	box-shadow: 0 0 5px #959595;
+}
+.btn-shadow{
+	box-shadow: 0 1px 5px #959595;
+}
+/*************/
+
+
+.calendar{
+	width: 346px;
+	height: 427px;
+	background: white;
+	margin: 20px;
+}
+.header-calendar{
+	color: white;
+	background: #404a58;
+	text-align: center;
+    padding: 21px 38px 23px 38px;
+    position: relative;
+}
+.header-calendar a {
+	vertical-align: middle;
+	display: inline-block;
+}
+.header-calendar h3 {
+	padding: 0;
+	margin: 0;
+	width: 90%;
+	font-stretch: ultra-expanded;
+	font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-calendar {
+	font-size: 14px;
+    padding: 10px 24px 28px 23px;
+}
+.table-calendar{
+	width: 100%;
+	padding: 0px 2px 0px 5px;
+	border-spacing:4px;
+}
+.table-calendar td {
+    width: 37px;
+    height: 37px;
+    text-align: center;
+}
+.unactive{
+	color: #c5c5c5;
+}
+.current{
+	color: white;
+	background: #fb6362;
+	border-radius: 50%;
+}
+.event{
+	color: #fb6362;
+}
+.button {
+    height: 57px;
+    background-color: #fb6362;
+    color: white;
+    margin-top: 21px;
+    margin-top: 21px;
+}
+
+button{
+	border: 1px solid #fb6362;
+	box-sizing: border-box;
+	border-radius: 2px;
+	width:100%;
+	font-size: 15px;
+}
+
+/*/////////////////////////////////////////////*/
+
+.booking{
+	margin: 20px;
+	width: 346px;
+	height: 626px;
+	background: white;
+	box-sizing: border-box;
+}
+
+.booking-header{
+	width: 100%;
+	height: 185px;
+	color: white;
+	position: relative;
+}
+.booking-header img {
+	width: 100%;	
+}
+
+.booking-header-location{
+	display: block;
+	position: absolute;
+	bottom: 15px;
+	left: 23px;
+
+}
+.booking-header-location h2{
+	font-size: 25px;
+	font-weight: lighter;
+
+}
+.booking-header-location h3{
+	display: inline-block;
+	font-size: 13px;
+	font-weight: lighter;
+}
+
+.booking-header-location a{
+	display: inline-block;
+	vertical-align: middle;
+}
+.locale-small{
+	float: left;
+}
+    
+.booking-form{
+	width: 100%;
+	padding: 13px 25px 25px 25px;
+	box-sizing: border-box;
+}
+
+.check-in, .check-out, .selectors{
+	width: 100%;
+	position: relative;		
+	margin-bottom: 14px;
+}
+
+.input{
+	width: 100%;
+	display: inline-block;
+	height: 45px;
+	padding-left: 14px;
+	background: #f4f4f4;
+	box-sizing: border-box;
+}
+.check-in a, .check-out a, .selectors a{
+	position: absolute;
+	right: 4px;
+	bottom: 4px;
+	height: 37px;
+	width: 37px;
+	background:#414b59;
+	vertical-align: middle;
+	text-align: center;
+	
+	box-sizing: border-box;
+}
+.check-in a, .check-out a{
+	padding: 10px 10px 11px 11px;
+	box-sizing: border-box;
+}
+.selectors a{
+	padding: 9px 13px 15px 14px;
+	box-sizing: border-box;
+}
+
+
+.adults, .children{
+	width: 138px;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+}
+.adults{
+	margin-right: 14px;
+}
+
+
+label{
+	font-size: 14px;
+	font-weight: bolder;
+	display: block;
+	padding: 10px 0;
+	color: #666666;
+}
+
+
+.checkbox input{
+	display: inline-block;
+	vertical-align: middle;
+
+}
+.checkbox label{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon.search{
+	display: inline-block;
+}
+.button div{
+	vertical-align: middle;
+}
+
+/*///////////////////////////////////////*/
+.fav-place{
+	margin: 20px;
+	width: 792px;
+	height: 340px;
+	background: white;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+.nav-place {
+	height: 100%;
+    width: 72px;
+    background-color: #414b59;
+    float: left;
+}
+
+.nav-place ul {
+	height: 100%;
+}
+
+
+.nav-place li {
+    box-sizing: border-box;
+    height: 33.333%;
+    display: block;
+    position: relative;
+    padding: 50px 24px;
+
+}
+.nav-place-current{
+	background: #fb6362;
+}
+
+.nav-place li:hover{
+	background: #fb6362;
+}
+
+.fav-place-article{
+	box-sizing: border-box;
+	position: relative;
+	font-size: 15px;
+	padding: 25px 34px;
+	width: 357px;
+	float: left;
+}
+.fav-place-article h2{
+	font-size: 21px;
+	line-height: 30px;
+    width: 200px;
+    color: #4d4d4d;	
+    margin-bottom: 10px;
+}
+.fav-place-article p{
+	font-size:14px;
+	margin: 30px 0 10px 0;
+	line-height: 25px;
+
+}
+.fav-place-article a{
+	color: #fb6362;
+	margin: 10px 0;
+
+}
+.fav-place-article:after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: -47px;
+    display: block;
+    border: 23px solid transparent;
+    border-left: 24px solid white;
+    z-index: 100;
+}
+.fav-place-illustration{
+	width: 363px;
+	float: right;
+	position: relative;
+	top:0;
+	right: 0;
+}
+
+.fav-place-illustration img{
+	height: auto;
+	width: 100%;	
+}
+
+.article-feedback{
+	position: absolute;
+	bottom:47px;
+	right: 29px;	
+	color: white;
+}
+
+.article-feedback a, .article-feedback span{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+
+
+/*///////////////////////////////////////*/
+.email{
+	box-sizing: border-box;
+	background: white;
+	width: 380px;
+	height: 487px;
+	margin: 20px;
+	padding: 25px;
+}
+
+.email-form{	
+	width: 100%;
+}
+.email-field{
+	position: relative;
+	width: 100%;
+    height: 45px;
+    resize: vertical;
+    
+}
+.icon.add, .icon.clip{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+{
+
+}
+.email-field, .email-subject {
+	width: 100%;
+	position: relative;		
+	margin-bottom: 14px;
+}
+
+.email-field a , .email-subject a {
+    position: absolute;
+    top: 0;
+    right: 0;
+	vertical-align: middle;
+	text-align: center;
+	box-sizing: border-box;
+}
+.email-field a {
+	margin: 15px;
+}
+.email-subject a {
+	margin: 10px;
+}
+.email-subject{
+	position: relative;
+	width: 100%;
+    height: 45px;
+}
+
+.selected-email {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 37px;
+    background-color: #404a58;
+    color: white;
+    padding: 9px 10px;
+    box-sizing: border-box;
+}
+
+.email-text{
+	width: 100%;
+	height: 225px;
+	background: #f4f4f4;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.input-btn{
+	width: 127px;
+	border: 1px solid #fb6362;
+	border-radius: 2px;
+	margin-left: 200px;
+}
+
+
+/* я пыталась//////////////////*/
+
+.diagram {
+    width: 792px;
+    height:340px;
+    position: relative;
+    margin: 20px;
+    background: white;
+}
+.grid {
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+}
+.grid li{
+	width: 700px;
+	border-bottom: 1px solid #eaeaea;
+	height: 60px;
+	vertical-align: text-bottom;
+}
+
+.diagram-columns {
+    display: inline-block;
+    position: absolute;
+    bottom: 100px;
+    margin-left: 100px;
+}
+
+.diagram-columns li {
+    display: inline-block;
+    width: 55px;
+    margin: 0 0 -50px 20px;
+    background-color: #fb6362;
+    position: relative;
+    border: 1px solid #fb6362;
+    border-radius: 2px;
+}
+.diagram .week {
+	position: absolute;
+    bottom: 80px;
+	margin: -20px 0 0 120px;
+}
+.diagram .week li {
+	display: inline-block;
+	text-align: center;
+	width: 55px;
+	margin-right: 22px;
+}
+

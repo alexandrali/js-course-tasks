@@ -1,0 +1,13 @@
+.date{
+	display: block;
+	border-bottom: 1px solid black;
+	background: #F19CBB;
+	height: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+.schedule{
+	padding: 10px 5px;
+	list-style-type: none;
+}

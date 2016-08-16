@@ -1,0 +1,22 @@
+*{margin: 0; padding: 0;}
+
+.calendar{
+	width: 95%;
+	margin: 10px auto;
+	border: 1px solid black;
+}
+
+.days > li{
+	box-sizing: border-box;
+	display: inline-block;
+	border: 1px solid black;
+	vertical-align: top;
+	height: 600px;
+	width: calc(100%/7);
+	
+}
+.center{
+	text-align: center;
+	padding: 5px 0;
+	border: 1px solid black;
+}

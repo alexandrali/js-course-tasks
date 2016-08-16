@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>forms_and_widgets</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>  
+	<div class = "container">
+		<!---->
+
+		<div class = "calendar shadow">
+			<header class = "header-calendar"> 
+				<a href = ""><div class='icon Prev'></div></a>
+				<h3>May 2014</h3>
+				<a href = ""><div class='icon Next'></div></a>
+			</header>
+			<form class = "form-calendar">
+				<table class = "table-calendar">
+					<thead>
+						<tr>
+							<td>Sun</td>
+							<td>Mon</td>
+							<td>Tue</td>
+							<td>Wed</td>
+							<td>Thu</td>
+							<td>Fri</td>
+							<td>Sat</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class = "unactive">29</td>
+							<td class = "unactive">30</td>
+							<td>1</td>
+							<td>2</td>
+							<td class = "current">3</td>
+							<td>4</td>
+							<td>5</td>  					
+    					</tr>
+    					<tr>
+							<td>6</td>
+							<td class = "event">7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>  					
+    					</tr>
+    					<tr>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>  					
+    					</tr>
+    					<tr>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td class = "event">23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>  					
+    					</tr>
+    					<tr>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td class = "unactive">1</td>
+							<td class = "unactive">2</td>
+							<td class = "unactive">3</td>  					
+    					</tr>
+    				</tbody>
+				</table>
+				<button class = "button btn-shadow"> ADD EVENT
+				</button>
+			</form>
+		</div>
+
+		<!---->
+
+		<div class = "booking shadow">
+			<div class = "booking-header">
+				<img src = "img/paris.png" alt = "paris">
+				<div class = "booking-header-location">
+					<h2>Hotel Relais</h2>
+					<a href = ""><div class='icon locate-small'></div></a>
+					<h3>Paris, France</h3>
+				</div>
+			</div>
+			<form class = "booking-form">
+					<div class = "check-in">
+						<label> Check in </label>
+						<input class = "input" placeholder = "9 July, 2016">
+						<a href = ""><div class='icon Calendar'></div></a>
+					</div>
+
+					<div class = "check-out">
+						<label> Check out </label>
+						<input class = "input"  placeholder = "16 July, 2016">
+						<a href = ""><div class='icon Calendar'></div></a>
+					</div>
+
+					<div class = "checkbox">
+						<input type = "checkbox">
+						<label> Flexible dates </label>
+
+					</div>
+
+					<div class = "selectors ">
+						<div class = "adults">
+						<label> Adults </label>
+						<input class = "input" placeholder = "2">
+						<a href = ""><div class='icon rect'></div></a>
+						</div>
+
+						<div class = "children">
+						<label> Children </label>
+						<input class = "input" placeholder = "1">
+						<a href = ""><div class='icon rect'></div></a>
+						</div>
+
+					</div>
+					<button class = "button btn-shadow"><div class='icon search'></div> SEARCH ROOMS
+					</button>
+				</form>
+		</div>
+
+		<!---->
+
+		<div class = "fav-place shadow">
+			<nav class = "nav-place">
+				<ul>
+					<li class = "nav-place-current"><a href = ""><div class='icon eye'></div></a></li>
+					<li><a href = ""><div class='icon locate'></div></a></li>
+					<li><a href = ""><div class='icon star'></div></a></li>
+				</ul>
+			</nav>
+
+			<article class = "fav-place-article">
+				<h2> My favourite place in the world </h2>
+				<span> <b>154</b> Reviews</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a pulvinar ipsum. Aliquam sit amet iaculis dolor. Vivamus sed diam sollicitudin.</p>
+				<a href = "">Read more</a>
+			</article>
+
+			<div class = "fav-place-illustration">
+				<img src = "img/sea.png">
+				<div class = "article-feedback">
+					<span>
+						<a href = ""><div class='icon dialog'></div></a>726
+						<a href = ""><div class='icon heart'></div></a>1082
+					</span>		
+				</div>
+			</div>
+		</div>
+
+
+		<!---->
+		<div class = "email shadow">
+			<form = "email-form">
+				<div class = "email-field">
+					<input class = "input" type = "text">
+					<span class = "selected-email">rick.james@mail.com</span>
+					<a href = ""><div class='icon plus'></div></a>
+				</div>
+
+				<div class = "email-subject">
+					<input class = "input" type = "text"placeholder = "Subject">
+					<a href = ""><div class='icon clip'></div></a>
+				</div>
+
+				<textarea class = "email-text" placeholder = "Message"></textarea>
+				<input class = "button input-btn btn-shadow" value = "SEND" type = "submit">
+			</form>
+		</div>
+		<!---->
+		
+
+	</div>
+
+
+</body>
+</html>
